@@ -1,0 +1,148 @@
+.dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.dashboard-header h1 {
+    color: #333;
+    margin: 0;
+    font-size: 36px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info span {
+    font-size: 18px;
+    color: #666;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.game-selection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-selection h2 {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.game-buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-btn {
+    padding: 25px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+.game-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ai-btn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+}
+
+.ai-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #218838, #1fa97c);
+}
+
+.pvp-btn {
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+    color: white;
+}
+
+.pvp-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #0056b3, #5a2d91);
+}
+
+.game-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 15px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+
+    .game-selection h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .game-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .game-btn {
+        padding: 20px 30px;
+        font-size: 20px;
+        min-width: 250px;
+    }
+}
