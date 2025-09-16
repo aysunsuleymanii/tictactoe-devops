@@ -10,7 +10,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-// Update the CORS middleware section
 app.use(cors({
     origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
     credentials: true
@@ -46,7 +45,6 @@ app.get('/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/games', gameRoutes);
 
-// Database connection with retry logic
 const connectWithRetry = async () => {
     const maxRetries = 10;
     const retryDelay = 3000;
@@ -61,10 +59,10 @@ const connectWithRetry = async () => {
 
             return true;
         } catch (error) {
-            console.log(`❌ Database connection attempt ${i}/${maxRetries} failed:`, error.message);
+            console.log(`Database connection attempt ${i}/${maxRetries} failed:`, error.message);
 
             if (i === maxRetries) {
-                console.error('❌ Max retries reached. Unable to connect to database.');
+                console.error('Max retries reached. Unable to connect to database.');
                 process.exit(1);
             }
 
