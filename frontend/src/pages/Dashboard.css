@@ -91,25 +91,25 @@
 }
 
 .ai-btn {
-    background: linear-gradient(135deg, #28a745, #20c997);
+    background-color: #90ee90;
     color: white;
 }
 
 .ai-btn:hover:not(:disabled) {
-    background: linear-gradient(135deg, #218838, #1fa97c);
+    background-color: #7dd87d;
 }
 
 .pvp-btn {
-    background: linear-gradient(135deg, #007bff, #6f42c1);
+    background-color: #87ceeb;
     color: white;
 }
 
 .pvp-btn:hover:not(:disabled) {
-    background: linear-gradient(135deg, #0056b3, #5a2d91);
+    background-color: #6bb6ff;
 }
 
 .game-btn:disabled {
-    background: #ccc;
+    background-color: #ccc;
     cursor: not-allowed;
     transform: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
