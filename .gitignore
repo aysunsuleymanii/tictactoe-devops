@@ -1,6 +1,6 @@
 # Default ignored files
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
@@ -37,3 +37,5 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+kubectl.sha256

@@ -1,5 +1,5 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "tictactoe",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
