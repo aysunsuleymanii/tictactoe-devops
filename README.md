@@ -19,7 +19,7 @@ Custom Namespace Deployment (10%)
 - Git
 
 # Clone the repository
-git clone https://github.com/aysunsuleymanii/tictactoe-devops.git
+git clone https://github.com/aysunsuleymanii/tictactoe-devops.git  
 cd tictactoe-devops
 
 # Start the application
